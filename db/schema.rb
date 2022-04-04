@@ -10,13 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_22_055316) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_04_052240) do
+  create_table "bugs", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "bug_type", default: 0
+    t.integer "feature_status"
+    t.integer "bug_status"
+    t.datetime "deadline"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "jwt_denylist", force: :cascade do |t|
     t.string "jti", null: false
     t.datetime "exp", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["jti"], name: "index_jwt_denylist_on_jti"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "project_name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

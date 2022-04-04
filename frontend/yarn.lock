@@ -5335,6 +5335,11 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
+moment@^2.29.2:
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+  integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
+
 mosha-vue-toastify@^1.0.23:
   version "1.0.23"
   resolved "https://registry.yarnpkg.com/mosha-vue-toastify/-/mosha-vue-toastify-1.0.23.tgz#eaa5de2a4ee0ca1167421132a42c1ac55ebb7e26"
