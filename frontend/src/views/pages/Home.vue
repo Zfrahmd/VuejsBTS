@@ -6,21 +6,21 @@
         project. Quality Assurance can add bug to a project while developer will solve that bug.
       </p>
       <hr class="my-4">
-      <p class="text-center">
-      </p>
-      <p class="text-center">
+      <p v-if="isLoggedIn" class="text-center">
+        User id: {{ this.getUserID }}
       </p>
     </div>
-    <!-- <div class="home">
-      <img alt="Vue logo" src="@/assets/logo.png">
-    </div> -->
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 
 export default {
   name: 'Home',
+  computed: {
+    ...mapGetters(["isLoggedIn", "getUserID"]),
+  },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="py-5">
-      <h2><strong>Bug Detail</strong></h2>
+      <h2><strong>User Profile</strong></h2>
     </div>
     <div class="row py-4">
       <table class="table">
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: "Profile",
   computed: {
@@ -36,24 +36,7 @@ export default {
 </script>
 
 <style scoped>
-/* .sm-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-.sm-card {
-  width: 75%;
-  padding: 20px;
-  margin: 0 auto;
-  height: 25em;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-} */
+
 .table {
   color:#333;
   text-align: center;
